@@ -22,4 +22,13 @@ const AddedFeatures = props => {
   );
 };
 
-export default connect (null, {})(AddedFeatures);
+
+const mapStateToProps = state => {
+  console.log('mSTP', state);
+  return{
+
+  };
+};
+
+
+export default connect (mapStateToProps, {})(AddedFeatures);

@@ -6,19 +6,23 @@ import App from './App';
 import { createStore } from "redux";
 //Import Provider
 import { Provider } from "react-redux";
+//Import Reducer from file path
+import {Reducer} from "./reducers";
+
+
 
 import 'bulma/css/bulma.css';
 import './styles.scss';
 
 //const for Store and mock reducer
-const store = createStore(reducer);
+const store = createStore(Reducer);
 
-//Reducer function passed into createstore()
-function reducer() {
-    return {
-        title: "hi from the Redux Store!"
-    }
-}
+//DONT NEED??? Reducer function passed into createstore()
+// function reducer() {
+//     return {
+//         title: "hi from the Redux Store!"
+//     }
+// }
 
 
 const rootElement = document.getElementById('root');
