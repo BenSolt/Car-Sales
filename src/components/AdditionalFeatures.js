@@ -1,6 +1,10 @@
 import React from 'react';
 import AdditionalFeature from './AdditionalFeature';
 
+//import Connect
+import { connect } from "react-redux";
+
+
 const AdditionalFeatures = props => {
   return (
     <div className="content">
@@ -18,4 +22,4 @@ const AdditionalFeatures = props => {
   );
 };
 
-export default AdditionalFeatures;
+export default  connect(null, {})(AdditionalFeatures);

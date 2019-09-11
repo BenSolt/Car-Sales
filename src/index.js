@@ -13,6 +13,14 @@ import './styles.scss';
 //const for Store and mock reducer
 const store = createStore(reducer);
 
+//Reducer function passed into createstore()
+function reducer() {
+    return {
+        title: "hi from the Redux Store!"
+    }
+}
+
+
 const rootElement = document.getElementById('root');
 ReactDOM.render(
 <Provider store={store}>
