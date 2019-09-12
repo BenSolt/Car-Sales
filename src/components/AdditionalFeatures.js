@@ -1,6 +1,10 @@
 import React from 'react';
 import AdditionalFeature from './AdditionalFeature';
 
+//import Connect
+
+
+
 const AdditionalFeatures = props => {
   return (
     <div className="content">
@@ -18,4 +22,11 @@ const AdditionalFeatures = props => {
   );
 };
 
+
+
+
+
+
+
 export default AdditionalFeatures;
+

@@ -1,5 +1,9 @@
 import React from 'react';
 
+
+
+
+
 import AddedFeature from './AddedFeature';
 
 const AddedFeatures = props => {
@@ -18,5 +22,9 @@ const AddedFeatures = props => {
     </div>
   );
 };
+
+
+
+
 
 export default AddedFeatures;

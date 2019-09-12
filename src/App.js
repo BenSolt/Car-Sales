@@ -1,9 +1,17 @@
 import React from 'react';
 
+
+
 import Header from './components/Header';
 import AddedFeatures from './components/AddedFeatures';
 import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
+
+//my imports
+import { connect } from 'react-redux';
+
+
+
 
 const App = () => {
   const state = {
@@ -45,4 +53,13 @@ const App = () => {
   );
 };
 
-export default App;
+const mapStateToProps = state => {
+  console.log('mSTP app', state);
+  return{
+    car: state.car,
+    store: state.store
+
+  };
+
+};
+export default connect(mapStateToProps,{updatePrice}) (App);
