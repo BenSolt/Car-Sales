@@ -9,7 +9,7 @@ import Total from './components/Total';
 
 //my imports
 import { connect } from 'react-redux';
-import { updatePrice } from './actions';
+
 
 
 

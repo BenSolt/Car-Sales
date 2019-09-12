@@ -1,19 +1,13 @@
-//UPDATE PRICE
-export const UPDATE_PRICE = 'UPDATE_PRICE';
-export const updatePrice = price => {
+//REMOVE
+export const REMOVE_ITEM = 'REMOVE_ITEM';
+export const removeItem = price => {
   console.log(price);
-  return { type: UPDATE_PRICE, payload: price };
+  return { type: REMOVE_ITEM, payload: price };
 };
 
-//UPDATE STORE
-export const UPDATE_STORE = 'UPDATE_STORE';
-export const updateStore = price => {
-  console.log(price);
-  return { type: UPDATE_STORE, payload: price };
-};
-//UPDATE CAR
-export const UPDATE_CAR = 'UPDATE_CAR';
-export const updateCar = price => {
-  console.log(price);
-  return { type: UPDATE_CAR, payload: price };
+//ADD ITEM
+export const ADD_ITEM = 'ADD_ITEM';
+export const addItem = store => {
+  console.log(store);
+  return { type: ADD_ITEM, payload: store };
 };
