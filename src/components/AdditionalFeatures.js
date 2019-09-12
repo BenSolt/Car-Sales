@@ -2,7 +2,7 @@ import React from 'react';
 import AdditionalFeature from './AdditionalFeature';
 
 //import Connect
-import { connect } from "react-redux";
+
 
 
 const AdditionalFeatures = props => {
@@ -24,12 +24,9 @@ const AdditionalFeatures = props => {
 
 
 
-const mapStateToProps = state => {
-  console.log('mSTP', state);
-  return{
 
-  };
-};
 
-//export default AdditionalFeatures;
-export default  connect(mapStateToProps, {})(AdditionalFeatures);
+
+
+export default AdditionalFeatures;
+
